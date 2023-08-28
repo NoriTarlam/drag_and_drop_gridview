@@ -243,6 +243,7 @@ class _MainGridViewState extends State<MainGridView> {
         NotificationListener<OverscrollIndicatorNotification>(
           onNotification: (overscroll) {
             //overscroll.disallowGlow();
+            overscroll.disallowIndicator();
             return true;
           },
           child: GridView.builder(
@@ -283,6 +284,7 @@ class _MainGridViewState extends State<MainGridView> {
         NotificationListener<OverscrollIndicatorNotification>(
           onNotification: (overscroll) {
             //overscroll.disallowGlow();
+            overscroll.disallowIndicator();
             return true;
           },
           child: GridView.builder(
